@@ -1,7 +1,7 @@
-# install.packages('recommenderlab')
-# install.packages('data.table')
-# install.packages('reshape2')
-# install.packages('ggplot2')
+#install.packages('recommenderlab')
+#install.packages('data.table')
+#install.packages('reshape2')
+#install.packages('ggplot2')
 
 library(recommenderlab)
 library(data.table)
@@ -46,7 +46,7 @@ for (c in 1:ncol(genre_matrix)) {
 } 
 
 # Create search matrix
-
+search_matrix <- cbind(movies[,1:2], genre_matrix)
 
 # Create ratings matrix. Rows = userId, Columns = movieId
 
